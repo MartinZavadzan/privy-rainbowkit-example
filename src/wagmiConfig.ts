@@ -16,12 +16,10 @@ const rainbowKitWallets = [
   phantomWallet,
 ];
 
-console.log({x: process.env.NEXT_PUBLIC_PRIVY_APP_ID})
-
 const privyWallet = toPrivyWallet({
   id: process.env.NEXT_PUBLIC_PRIVY_APP_ID!,
   name: "Privy Wallet",
-  iconUrl: "/assets/token.svg",
+  iconUrl: "",
 });
 
 const connectors = connectorsForWallets(
